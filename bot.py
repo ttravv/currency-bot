@@ -12,7 +12,6 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 config = dotenv_values(".env")
 bot = Bot(token=config["BOT_TOKEN"])
-bank = config["BANK"]
 dp = Dispatcher()
 
 
